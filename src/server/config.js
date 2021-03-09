@@ -1,4 +1,5 @@
 const path = require('path'); //modulo path me permite unir directorios 
+const express = require('express');
 const route = require('../routes/index');
 
 
@@ -16,7 +17,12 @@ module.exports = app => {
 
     route(app);
 
+
+    //static files
+    app.use('/public' , express.static(path.join(__dirname , '../public')) );
+
     return app;
+    
 
 
 }
