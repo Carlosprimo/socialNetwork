@@ -7,7 +7,10 @@ module.exports = app => {
 
     //configuracion
     app.set('port', process.env.PORT || 3000);
-    app.set('views', path.join(__dirname,  'views'));
+    
+        // Motor de plantilla
+    app.set("view engine", "ejs");
+    app.set("views", path.join( __dirname , '../views'));
 
 
     
