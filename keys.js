@@ -1,5 +1,6 @@
+require('dotenv').config();
 module.exports = {
     database: {
-        URI: 'mongodb://localhost/socialnetwork'
+        URI: process.env.DB_URI
     }
 };

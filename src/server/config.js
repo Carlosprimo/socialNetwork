@@ -15,9 +15,7 @@ module.exports = app => {
 
     
 
-
     //routes
-
     route(app);
 
 
