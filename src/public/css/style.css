@@ -1,0 +1,143 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    border-bottom: 1px solid #52b788;
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    background-color: #081c15;
+}
+header .navbar {
+    display:grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 5px;
+    width:100%;
+    height:100%
+}
+header .navabar .navbar-logo {
+    columns: 1;
+}
+header .navabar .navbar-logo img {
+    height: 20px;
+    width: 20px;
+}
+header .navbar .navbar-search {
+    border: 1px solid #52b788;
+    border-radius: 100px;
+    display:flex;
+    align-self: center;
+    height: 95%;
+    background-color: #fff;
+    justify-content:space-around;
+    transition: width 0.3s linear 0.2s;
+    width:50%;
+    justify-self: center;
+}
+header .navbar .navbar-search:focus-within {
+    width: 80%;
+} 
+
+header .navbar .navbar-search  input:focus + button {
+    transition-delay: 0.3s;
+    visibility: visible;
+}
+header .navbar .navbar-search  input {
+    font-size: 16px;
+    border-radius: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 92%;
+    height: 100%;
+    border: 0;
+    padding-left: 10px;
+    background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header .navbar .navbar-search  input:focus {
+    outline: none;
+    border: 0;
+}
+header .navbar .navbar-search button {
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 5%;
+    height: 50%;
+    cursor: pointer;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 0;
+    align-self: center;
+    justify-self: center;
+    border-left: 1px solid #6b9080;
+    visibility: hidden;
+}
+header .navbar .navbar-search button:hover {
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #fff;
+    height:70%;
+}
+
+header .navbar .navbar-search button:focus{
+    outline: none;
+}
+
+header .navbar .navbar-login {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+header .navbar .navbar-login .navbar-login__loginregister {
+    border: 0;
+    display:flex;
+    align-items:center;
+    justify-self: center;
+    margin-right: 10px;
+}
+header .navbar .navbar-login .navbar-login__loginregister button {
+    font-size:16px;
+    background-color: #d8f3dc;
+    border-radius: 100px;
+    box-shadow:none;
+    width: 100px;
+    height: 30px;
+    color:#081c15;
+    cursor: pointer;
+    border-style: none;
+    margin-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
+}
+header .navbar .navbar-login .navbar-login__loginregister button:hover {
+    text-decoration: underline;
+    color:#fff;
+    background-color: #2d6a4f;
+}
+header .navbar .navbar-login .navbar-login__loginregister button:focus{
+    outline:none;
+}
+header .navbar .navbar-login > svg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height:25px;
+    cursor: pointer;
+    background-color: #081c15;
+    color: #fff;
+}
+header .navbar .navbar-login:hover > svg {
+    
+} 
