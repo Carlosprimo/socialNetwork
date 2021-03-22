@@ -21,7 +21,11 @@ module.exports = app => {
     app.use(morgan('dev'));
     app.use(multer({
         dest: path.join(__dirname, '../public/upload/temp')
-    })).single('files');
+    }).single('files'));
+    app.use(express.urlencoded({extended: true}));
+    app.use(express.json());
+
+
     //routes
     route(app);
 
